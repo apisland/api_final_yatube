@@ -24,6 +24,14 @@ class CommentSerializer(serializers.ModelSerializer):
     author = serializers.SlugRelatedField(
         read_only=True, slug_field='username'
     )
+    post = serializers.SlugRelatedField(
+        read_only=True, slug_field='id'
+    )
+
+    def validate_post(self, post):
+        request = self.context.get('request')
+        post = int(request.parser_context.get('kwargs').get('id'))
+        return post
 
     class Meta:
         fields = '__all__'

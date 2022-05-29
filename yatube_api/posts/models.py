@@ -43,6 +43,7 @@ class Post(models.Model):
         return self.text
 
     class Meta:
+        ordering = ('id',)
         verbose_name_plural = 'Записи блогов'
 
 

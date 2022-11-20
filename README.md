@@ -5,7 +5,8 @@
 ### Стек технологий
 
 ![](https://img.shields.io/badge/Python-3.7-blue?style=flat&logo=Python&logoColor=#3776AB)
-![](https://img.shields.io/badge/Django-2.2.16-blue?style=flat&logo=Django&logoColor=red)
+![](https://img.shields.io/badge/DjangoRESTFramework-3.12.4-blue?style=flat&logo=Django&logoColor=red)
+
 
 ### Эндпоинты для взаимодействия с ресурсами:
 
